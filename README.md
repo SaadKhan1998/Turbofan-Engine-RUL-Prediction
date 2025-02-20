@@ -1,5 +1,4 @@
-
-Remaining Useful Life (RUL) Prediction
+# Turbofan-Engine-RUL-Prediction using Transformers
 
 # Project Overview
 This project focuses on predicting the Remaining Useful Life (RUL) of turbofan engines using a Transformer-based deep learning model. The CMAPSS dataset is used for training and evaluation, and the workflow involves data preprocessing, model training, and hyperparameter tuning with Optuna.
@@ -22,19 +21,18 @@ Results Visualization: Graphical analysis of training loss and validation loss f
 ├── README.md            # Project documentation
 
 # Installation
-# Clone the repository
+1. Clone the repository
 git clone https://github.com/your-username/rul-prediction.git
 cd rul-prediction
 
-# Create a virtual environment and activate it
+2. Create a virtual environment and activate it
 python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
-# Install dependencies
+3. Install dependencies
 pip install -r requirements.txt
 
 # Usage
-
 1. Data Preprocessing
 python preprocessing.py
 
@@ -51,9 +49,8 @@ python visualization.py
 The project includes a comparative analysis of different batch sizes, number of trials, and epochs. Example training loss and validation loss curves are provided to analyze model performance.
 
 # Future Improvements
-Implement advanced feature engineering techniques.
-Experiment with alternative deep learning architectures.
-Deploy the model as an API for real-time RUL predictions.
+Can experiment with alternative deep learning architectures.
+Currently working to deploy the model as an API for real-time RUL predictions.
 
 # License
 MIT License
