@@ -1,0 +1,13 @@
+{
+  "best_params": {
+    "lr": 0.0026704148606095223,
+    "batch_size": 128,
+    "seq_len": 50,
+    "d_model": 32,
+    "num_layers": 1,
+    "dropout": 0.05,
+    "weight_decay": 0.00032015667749545756
+  },
+  "best_val_loss": 0.005150705575942993,
+  "best_trial": 35
+}

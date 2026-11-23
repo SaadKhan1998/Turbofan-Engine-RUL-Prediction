@@ -1,0 +1,112 @@
+{
+  "dataset": "FD001",
+  "test": {
+    "rmse": 14.332704738685386,
+    "mae": 10.659058656692505,
+    "nasa_score": 315.2421350939689,
+    "n": 100
+  },
+  "test_vs_capped_truth": {
+    "rmse": 13.200348119526105,
+    "mae": 9.589058656692504,
+    "nasa_score": 286.91002691836593,
+    "n": 100
+  },
+  "test_single_members": [
+    {
+      "rmse": 14.65312148671234,
+      "mae": 10.842371845245362,
+      "nasa_score": 342.48373831404064,
+      "n": 100
+    },
+    {
+      "rmse": 14.501987911943797,
+      "mae": 11.027372694015503,
+      "nasa_score": 354.6752168789048,
+      "n": 100
+    },
+    {
+      "rmse": 15.913263277767179,
+      "mae": 11.491880145072937,
+      "nasa_score": 374.86084775568116,
+      "n": 100
+    },
+    {
+      "rmse": 14.348847965706522,
+      "mae": 10.559429888725282,
+      "nasa_score": 340.9558160995969,
+      "n": 100
+    },
+    {
+      "rmse": 14.874272789326165,
+      "mae": 11.47083251953125,
+      "nasa_score": 328.55295787719024,
+      "n": 100
+    }
+  ],
+  "validation_all_windows": {
+    "rmse": 8.55575761445938,
+    "mae": 5.937973139883016,
+    "nasa_score": 4814.103812092801,
+    "n": 3852
+  },
+  "validation_last_window": {
+    "rmse": 3.2747084296275597,
+    "mae": 2.898931235074997,
+    "nasa_score": 7.053861679964696,
+    "n": 20
+  },
+  "members": [
+    {
+      "member": 1,
+      "seed": 42,
+      "best_epoch": 8,
+      "epochs_run": 23,
+      "best_val_loss": 0.005150705575942993,
+      "val_rmse": 8.971051216125488
+    },
+    {
+      "member": 2,
+      "seed": 43,
+      "best_epoch": 15,
+      "epochs_run": 30,
+      "best_val_loss": 0.0054343463853001595,
+      "val_rmse": 9.214753150939941
+    },
+    {
+      "member": 3,
+      "seed": 44,
+      "best_epoch": 15,
+      "epochs_run": 30,
+      "best_val_loss": 0.005936163943260908,
+      "val_rmse": 9.630812644958496
+    },
+    {
+      "member": 4,
+      "seed": 45,
+      "best_epoch": 30,
+      "epochs_run": 45,
+      "best_val_loss": 0.0052684941329061985,
+      "val_rmse": 9.073049545288086
+    },
+    {
+      "member": 5,
+      "seed": 46,
+      "best_epoch": 37,
+      "epochs_run": 52,
+      "best_val_loss": 0.005038880743086338,
+      "val_rmse": 8.87313461303711
+    }
+  ],
+  "hyperparameters": {
+    "lr": 0.0026704148606095223,
+    "batch_size": 128,
+    "seq_len": 50,
+    "d_model": 32,
+    "num_layers": 1,
+    "dropout": 0.05,
+    "weight_decay": 0.00032015667749545756
+  },
+  "runtime_seconds": 2194.3,
+  "device": "NVIDIA GeForce RTX 5060 Laptop GPU"
+}

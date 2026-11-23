@@ -1,0 +1,16 @@
+# environments / caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# dataset (download with download_data.py)
+data/
+
+# run outputs: keep only the reference runs
+outputs/*
+!outputs/FD001/
+!outputs/FD003/
+smoke/
+predictions.csv

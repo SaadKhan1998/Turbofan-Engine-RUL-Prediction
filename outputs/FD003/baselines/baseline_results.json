@@ -1,0 +1,61 @@
+{
+  "dataset": "FD003",
+  "seq_len": 50,
+  "results": [
+    {
+      "model": "Transformer (ensemble of 5, this repo)",
+      "val_rmse": 8.695147591663527,
+      "test_rmse": 12.956869116113813,
+      "test_mae": 9.261268291473389,
+      "nasa_score": 283.5838799495325,
+      "test_rmse_capped": 11.392448607328433,
+      "fit_seconds": 2299.6,
+      "parameters": NaN,
+      "notes": "Optuna search; single members test RMSE 13.17-14.01"
+    },
+    {
+      "model": "LSTM (ensemble of 5)",
+      "val_rmse": 8.64246745488674,
+      "test_rmse": 14.06830909363777,
+      "test_mae": 10.015642490386963,
+      "nasa_score": 301.469836441315,
+      "test_rmse_capped": 12.295626222715175,
+      "fit_seconds": 840.4,
+      "parameters": 1117445.0,
+      "notes": "15 Optuna trials; best {'lr': 0.0009079025257670378, 'batch_size': 128, 'hidden_size': 128, 'num_layers': 2, 'dropout': 0.05, 'weight_decay': 0.0003703589193960092}; single members test RMSE 13.84-14.87"
+    },
+    {
+      "model": "Gradient boosting (XGBoost)",
+      "val_rmse": 11.522534190591418,
+      "test_rmse": 15.278637191856056,
+      "test_mae": 11.678129568099976,
+      "nasa_score": 412.4450418259557,
+      "test_rmse_capped": 13.745865444499913,
+      "fit_seconds": 11.9,
+      "parameters": NaN,
+      "notes": "learning_rate=0.1, max_depth=4, 300 trees, chosen on validation from 4 configs"
+    },
+    {
+      "model": "Linear regression (ridge)",
+      "val_rmse": 13.360166338203074,
+      "test_rmse": 17.84545983351822,
+      "test_mae": 14.785134048461915,
+      "nasa_score": 585.1586520211112,
+      "test_rmse_capped": 16.043780647173662,
+      "fit_seconds": 1.2,
+      "parameters": 801.0,
+      "notes": "alpha=10 chosen on validation from 6 values"
+    },
+    {
+      "model": "Mean predictor",
+      "val_rmse": 41.151227876128246,
+      "test_rmse": 45.25865204070484,
+      "test_mae": 38.14483581542969,
+      "nasa_score": 60715.63576515024,
+      "test_rmse_capped": 43.91181933172509,
+      "fit_seconds": 0.0,
+      "parameters": 1.0,
+      "notes": "always predicts 93.6 cycles"
+    }
+  ]
+}

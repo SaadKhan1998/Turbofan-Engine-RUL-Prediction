@@ -1,0 +1,23 @@
+FD001: seq_len 50, 15 features, 16779 train / 3852 val windows, 100 test engines
+  Mean predictor               val RMSE  41.96 | test RMSE  43.24 | MAE  35.91 | NASA   35722.9 |    0.0s
+  Linear regression (ridge)    val RMSE  14.62 | test RMSE  16.23 | MAE  13.45 | NASA     408.5 |    1.0s
+  Gradient boosting (XGBoost)  val RMSE  12.88 | test RMSE  14.81 | MAE  11.73 | NASA     331.5 |   11.2s
+  [lstm trial  0] {'lr': 0.0003574712922600243, 'batch_size': 64, 'hidden_size': 32, 'num_layers': 1, 'dropout': 0.2, 'weight_decay': 1.1527987128232396e-05} -> val RMSE 10.08
+  [lstm trial  1] {'lr': 0.002708160864249967, 'batch_size': 64, 'hidden_size': 128, 'num_layers': 1, 'dropout': 0.2, 'weight_decay': 2.621087878265438e-05} -> val RMSE 10.35
+  [lstm trial  2] {'lr': 0.00027010527749605503, 'batch_size': 256, 'hidden_size': 128, 'num_layers': 2, 'dropout': 0.05, 'weight_decay': 1.5673095467235405e-05} -> val RMSE 9.80
+  [lstm trial  3] {'lr': 0.00252126790477792, 'batch_size': 64, 'hidden_size': 64, 'num_layers': 2, 'dropout': 0.0, 'weight_decay': 0.00534516611064682} -> val RMSE 9.76
+  [lstm trial  4] {'lr': 0.00024112898115291975, 'batch_size': 64, 'hidden_size': 128, 'num_layers': 2, 'dropout': 0.3, 'weight_decay': 0.0006218704727769079} -> val RMSE 10.10
+  [lstm trial  8] {'lr': 0.002044187835249379, 'batch_size': 256, 'hidden_size': 128, 'num_layers': 2, 'dropout': 0.1, 'weight_decay': 1.1919481947918725e-05} -> val RMSE 9.97
+  [lstm trial 10] {'lr': 0.0003885815523943803, 'batch_size': 64, 'hidden_size': 64, 'num_layers': 2, 'dropout': 0.0, 'weight_decay': 0.00238473529086583} -> val RMSE 10.08
+  [lstm trial 11] {'lr': 0.002819969855139207, 'batch_size': 64, 'hidden_size': 64, 'num_layers': 2, 'dropout': 0.0, 'weight_decay': 8.743567133233448e-05} -> val RMSE 9.76
+  [lstm trial 12] {'lr': 0.0011731851429692328, 'batch_size': 64, 'hidden_size': 64, 'num_layers': 2, 'dropout': 0.05, 'weight_decay': 0.0001655299638259051} -> val RMSE 9.82
+  [lstm trial 14] {'lr': 0.0027858709271731275, 'batch_size': 128, 'hidden_size': 64, 'num_layers': 2, 'dropout': 0.0, 'weight_decay': 4.166394604531211e-05} -> val RMSE 10.15
+  LSTM (ensemble of 5)         val RMSE   9.44 | test RMSE  14.88 | MAE  11.11 | NASA     351.7 |  654.5s
+
+                                 model  val_rmse  test_rmse  test_mae  nasa_score  test_rmse_capped
+Transformer (ensemble of 5, this repo)      8.56      14.33     10.66      315.24             13.20
+           Gradient boosting (XGBoost)     12.88      14.81     11.73      331.55             13.62
+                  LSTM (ensemble of 5)      9.44      14.88     11.11      351.74             13.82
+             Linear regression (ridge)     14.62      16.23     13.45      408.47             15.10
+                        Mean predictor     41.96      43.24     35.91    35722.88             42.13
+Written to outputs\FD001\baselines

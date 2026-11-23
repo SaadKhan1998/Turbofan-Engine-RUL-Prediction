@@ -1,0 +1,237 @@
+Device: cuda (NVIDIA GeForce RTX 5060 Laptop GPU) | output: outputs\FD001
+FD001: 80 train / 20 val / 100 test engines | 15 features: sensor_2, sensor_3, sensor_4, sensor_6, sensor_7, sensor_8, sensor_9, sensor_11, sensor_12, sensor_13, sensor_14, sensor_15, sensor_17, sensor_20, sensor_21
+[trial  0] {'lr': 0.001, 'batch_size': 64, 'seq_len': 30, 'd_model': 64, 'num_layers': 2, 'dropout': 0.1, 'weight_decay': 0.0001} -> val_loss 0.00869 (RMSE 11.65) epoch 29/44, 164s
+[trial  1] {'lr': 0.0003574712922600243, 'batch_size': 64, 'seq_len': 30, 'd_model': 32, 'num_layers': 2, 'dropout': 0.05, 'weight_decay': 3.511356313970405e-05} -> val_loss 0.00877 (RMSE 11.71) epoch 36/51, 184s
+[trial  2] {'lr': 0.00018659959624904942, 'batch_size': 128, 'seq_len': 40, 'd_model': 128, 'num_layers': 1, 'dropout': 0.2, 'weight_decay': 1.3783237455007187e-05} -> val_loss 0.00667 (RMSE 10.21) epoch 66/81, 97s
+[trial  3] {'lr': 0.0007896186801026692, 'batch_size': 256, 'seq_len': 30, 'd_model': 64, 'num_layers': 2, 'dropout': 0.3, 'weight_decay': 5.9750279999602906e-05} -> val_loss 0.00852 (RMSE 11.54) epoch 26/41, 39s
+[trial  4] {'lr': 0.0009519754482692679, 'batch_size': 256, 'seq_len': 40, 'd_model': 32, 'num_layers': 1, 'dropout': 0.0, 'weight_decay': 9.46217535646148e-05} -> val_loss 0.00667 (RMSE 10.21) epoch 28/43, 25s
+[trial  5] {'lr': 0.00037507963596256056, 'batch_size': 128, 'seq_len': 40, 'd_model': 128, 'num_layers': 1, 'dropout': 0.25, 'weight_decay': 0.001319994226153501} -> val_loss 0.00722 (RMSE 10.62) epoch 36/51, 61s
+[trial  6] {'lr': 0.001193526270851053, 'batch_size': 64, 'seq_len': 40, 'd_model': 32, 'num_layers': 2, 'dropout': 0.3, 'weight_decay': 0.00026100256506134784} -> val_loss 0.00689 (RMSE 10.38) epoch 6/21, 77s
+[trial  7] {'lr': 0.00015019490572374368, 'batch_size': 128, 'seq_len': 30, 'd_model': 32, 'num_layers': 2, 'dropout': 0.15000000000000002, 'weight_decay': 0.005280796376895365} -> pruned
+[trial  8] {'lr': 0.0002334720250903526, 'batch_size': 128, 'seq_len': 40, 'd_model': 32, 'num_layers': 1, 'dropout': 0.3, 'weight_decay': 0.0004149795789891589} -> pruned
+[trial  9] {'lr': 0.001558428978238547, 'batch_size': 64, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.1, 'weight_decay': 0.0067410742656406975} -> val_loss 0.00533 (RMSE 9.13) epoch 8/23, 53s
+[trial 10] {'lr': 0.0009915792975795307, 'batch_size': 64, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.1, 'weight_decay': 0.0033546607220409034} -> val_loss 0.00552 (RMSE 9.28) epoch 6/21, 49s
+[trial 11] {'lr': 0.0015191992844632869, 'batch_size': 64, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.15000000000000002, 'weight_decay': 0.004415259335268767} -> val_loss 0.00550 (RMSE 9.27) epoch 4/19, 45s
+[trial 12] {'lr': 0.0026581422952228493, 'batch_size': 64, 'seq_len': 40, 'd_model': 32, 'num_layers': 1, 'dropout': 0.15000000000000002, 'weight_decay': 0.0031592072333106722} -> val_loss 0.00668 (RMSE 10.22) epoch 8/23, 53s
+[trial 13] {'lr': 0.002020555194928401, 'batch_size': 64, 'seq_len': 50, 'd_model': 128, 'num_layers': 1, 'dropout': 0.05, 'weight_decay': 0.008552346466382752} -> val_loss 0.00659 (RMSE 10.15) epoch 7/22, 52s
+[trial 14] {'lr': 0.0006084084724901525, 'batch_size': 256, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.15000000000000002, 'weight_decay': 0.0007243379058672285} -> pruned
+[trial 15] {'lr': 0.000690671248649607, 'batch_size': 64, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.3, 'weight_decay': 0.006273275698349802} -> val_loss 0.00543 (RMSE 9.21) epoch 26/41, 96s
+[trial 16] {'lr': 0.00021946397932694623, 'batch_size': 128, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.3, 'weight_decay': 0.007038009108968787} -> pruned
+[trial 17] {'lr': 0.00040837470681014435, 'batch_size': 64, 'seq_len': 40, 'd_model': 32, 'num_layers': 1, 'dropout': 0.25, 'weight_decay': 0.00768119660374839} -> pruned
+[trial 18] {'lr': 0.0011791775756318339, 'batch_size': 64, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.3, 'weight_decay': 0.0022796961632489446} -> val_loss 0.00532 (RMSE 9.11) epoch 22/37, 87s
+[trial 19] {'lr': 0.0015570259537113235, 'batch_size': 64, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.3, 'weight_decay': 0.00981861979369383} -> val_loss 0.00547 (RMSE 9.25) epoch 22/37, 87s
+[trial 20] {'lr': 0.0016523673886072784, 'batch_size': 64, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.05, 'weight_decay': 0.0006417381631028816} -> val_loss 0.00532 (RMSE 9.12) epoch 4/19, 45s
+[trial 21] {'lr': 0.002703712613513874, 'batch_size': 64, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.0, 'weight_decay': 0.0008427065956216203} -> val_loss 0.00576 (RMSE 9.48) epoch 6/21, 47s
+[trial 22] {'lr': 0.001164873861375687, 'batch_size': 64, 'seq_len': 30, 'd_model': 32, 'num_layers': 1, 'dropout': 0.1, 'weight_decay': 0.0010675346822098955} -> pruned
+[trial 23] {'lr': 0.0017961926667625736, 'batch_size': 64, 'seq_len': 30, 'd_model': 32, 'num_layers': 2, 'dropout': 0.1, 'weight_decay': 0.00045989783816901533} -> pruned
+[trial 24] {'lr': 0.0008980877887913267, 'batch_size': 64, 'seq_len': 40, 'd_model': 32, 'num_layers': 1, 'dropout': 0.05, 'weight_decay': 0.008896011092343769} -> pruned
+[trial 25] {'lr': 0.0028857205062061855, 'batch_size': 128, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.05, 'weight_decay': 0.00010160300159275612} -> val_loss 0.00518 (RMSE 8.99) epoch 8/23, 28s
+[trial 26] {'lr': 0.001194384709834158, 'batch_size': 64, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.0, 'weight_decay': 0.0003523004399007483} -> val_loss 0.00540 (RMSE 9.19) epoch 4/19, 43s
+[trial 27] {'lr': 0.0015818908954722646, 'batch_size': 128, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.2, 'weight_decay': 0.00019198700693686692} -> val_loss 0.00542 (RMSE 9.20) epoch 17/32, 38s
+[trial 28] {'lr': 0.0008845557331297554, 'batch_size': 64, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.3, 'weight_decay': 0.0008979118043944721} -> val_loss 0.00543 (RMSE 9.21) epoch 26/41, 96s
+[trial 29] {'lr': 0.0029200605700981466, 'batch_size': 128, 'seq_len': 50, 'd_model': 128, 'num_layers': 1, 'dropout': 0.05, 'weight_decay': 3.885114410934114e-05} -> pruned
+[trial 30] {'lr': 0.000839781063217371, 'batch_size': 64, 'seq_len': 50, 'd_model': 32, 'num_layers': 2, 'dropout': 0.0, 'weight_decay': 0.003211991539177431} -> pruned
+[trial 31] {'lr': 0.0015717935314562912, 'batch_size': 64, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.05, 'weight_decay': 0.001867550831362571} -> val_loss 0.00537 (RMSE 9.16) epoch 4/19, 45s
+[trial 32] {'lr': 0.0014578169444964604, 'batch_size': 64, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.05, 'weight_decay': 7.961592345823908e-05} -> val_loss 0.00539 (RMSE 9.18) epoch 4/19, 45s
+[trial 33] {'lr': 0.001965840637303737, 'batch_size': 64, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.3, 'weight_decay': 0.0010652902472216078} -> val_loss 0.00532 (RMSE 9.11) epoch 8/23, 54s
+[trial 34] {'lr': 0.0016961430315697136, 'batch_size': 64, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.3, 'weight_decay': 0.0007547869971147501} -> val_loss 0.00541 (RMSE 9.20) epoch 8/23, 55s
+[trial 35] {'lr': 0.0026704148606095223, 'batch_size': 128, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.05, 'weight_decay': 0.00032015667749545756} -> val_loss 0.00515 (RMSE 8.97) epoch 8/23, 27s
+[trial 36] {'lr': 0.002559778940889559, 'batch_size': 64, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.3, 'weight_decay': 0.0023524140221435046} -> val_loss 0.00545 (RMSE 9.23) epoch 8/23, 54s
+[trial 37] {'lr': 0.002912963030165875, 'batch_size': 128, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.05, 'weight_decay': 0.0002444527516683755} -> val_loss 0.00518 (RMSE 8.99) epoch 8/23, 27s
+[trial 38] {'lr': 0.002614159461798484, 'batch_size': 128, 'seq_len': 30, 'd_model': 32, 'num_layers': 1, 'dropout': 0.05, 'weight_decay': 0.0004703066729747777} -> pruned
+[trial 39] {'lr': 0.0023025231052574468, 'batch_size': 128, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.15000000000000002, 'weight_decay': 0.0001770385874343604} -> val_loss 0.00538 (RMSE 9.17) epoch 8/23, 27s
+Optuna finished in 1978s. Best trial 35: {'lr': 0.0026704148606095223, 'batch_size': 128, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.05, 'weight_decay': 0.00032015667749545756} (val_loss 0.00515)
+Training final ensemble of 5 with {'lr': 0.0026704148606095223, 'batch_size': 128, 'seq_len': 50, 'd_model': 32, 'num_layers': 1, 'dropout': 0.05, 'weight_decay': 0.00032015667749545756}
+-- member 1/5 (seed 42)
+  epoch   1 | train_loss 0.06730 | val_loss 0.02928 | val_RMSE  21.39 | val_MAE  15.95  *
+  epoch   2 | train_loss 0.01932 | val_loss 0.00833 | val_RMSE  11.41 | val_MAE   7.98  *
+  epoch   3 | train_loss 0.01154 | val_loss 0.00680 | val_RMSE  10.31 | val_MAE   8.21  *
+  epoch   4 | train_loss 0.01062 | val_loss 0.00560 | val_RMSE   9.36 | val_MAE   6.55  *
+  epoch   5 | train_loss 0.00966 | val_loss 0.00631 | val_RMSE   9.93 | val_MAE   6.91
+  epoch   6 | train_loss 0.00940 | val_loss 0.00939 | val_RMSE  12.11 | val_MAE   8.11
+  epoch   7 | train_loss 0.00926 | val_loss 0.00613 | val_RMSE   9.79 | val_MAE   7.33
+  epoch   8 | train_loss 0.00911 | val_loss 0.00515 | val_RMSE   8.97 | val_MAE   6.28  *
+  epoch   9 | train_loss 0.00885 | val_loss 0.00638 | val_RMSE   9.98 | val_MAE   6.55
+  epoch  10 | train_loss 0.00872 | val_loss 0.00667 | val_RMSE  10.21 | val_MAE   7.13
+  epoch  11 | train_loss 0.00876 | val_loss 0.00646 | val_RMSE  10.04 | val_MAE   6.67
+  epoch  12 | train_loss 0.00803 | val_loss 0.00616 | val_RMSE   9.81 | val_MAE   6.48
+  epoch  13 | train_loss 0.00812 | val_loss 0.00630 | val_RMSE   9.92 | val_MAE   6.24
+  epoch  14 | train_loss 0.00780 | val_loss 0.00592 | val_RMSE   9.62 | val_MAE   6.82
+  epoch  15 | train_loss 0.00754 | val_loss 0.00912 | val_RMSE  11.93 | val_MAE   8.62
+  epoch  16 | train_loss 0.00745 | val_loss 0.00659 | val_RMSE  10.14 | val_MAE   6.40
+  epoch  17 | train_loss 0.00736 | val_loss 0.00697 | val_RMSE  10.43 | val_MAE   7.45
+  epoch  18 | train_loss 0.00716 | val_loss 0.00664 | val_RMSE  10.19 | val_MAE   6.70
+  epoch  19 | train_loss 0.00700 | val_loss 0.00798 | val_RMSE  11.17 | val_MAE   7.27
+  epoch  20 | train_loss 0.00683 | val_loss 0.00678 | val_RMSE  10.29 | val_MAE   7.64
+  epoch  21 | train_loss 0.00671 | val_loss 0.00872 | val_RMSE  11.67 | val_MAE   7.43
+  epoch  22 | train_loss 0.00682 | val_loss 0.00711 | val_RMSE  10.54 | val_MAE   6.62
+  epoch  23 | train_loss 0.00663 | val_loss 0.00792 | val_RMSE  11.13 | val_MAE   7.51
+  early stopping at epoch 23 (best epoch 8)
+-- member 2/5 (seed 43)
+  epoch   1 | train_loss 0.08676 | val_loss 0.02282 | val_RMSE  18.88 | val_MAE  14.96  *
+  epoch   2 | train_loss 0.01551 | val_loss 0.00783 | val_RMSE  11.06 | val_MAE   8.47  *
+  epoch   3 | train_loss 0.01146 | val_loss 0.00639 | val_RMSE   9.99 | val_MAE   6.94  *
+  epoch   4 | train_loss 0.00997 | val_loss 0.00910 | val_RMSE  11.92 | val_MAE   7.79
+  epoch   5 | train_loss 0.00988 | val_loss 0.00965 | val_RMSE  12.28 | val_MAE   8.29
+  epoch   6 | train_loss 0.00954 | val_loss 0.00596 | val_RMSE   9.65 | val_MAE   7.16  *
+  epoch   7 | train_loss 0.00916 | val_loss 0.00749 | val_RMSE  10.82 | val_MAE   8.09
+  epoch   8 | train_loss 0.00903 | val_loss 0.00662 | val_RMSE  10.17 | val_MAE   7.22
+  epoch   9 | train_loss 0.00860 | val_loss 0.00638 | val_RMSE   9.99 | val_MAE   6.58
+  epoch  10 | train_loss 0.00854 | val_loss 0.00672 | val_RMSE  10.24 | val_MAE   6.86
+  epoch  11 | train_loss 0.00834 | val_loss 0.00669 | val_RMSE  10.22 | val_MAE   6.60
+  epoch  12 | train_loss 0.00823 | val_loss 0.00795 | val_RMSE  11.14 | val_MAE   8.78
+  epoch  13 | train_loss 0.00819 | val_loss 0.00781 | val_RMSE  11.05 | val_MAE   7.30
+  epoch  14 | train_loss 0.00833 | val_loss 0.00965 | val_RMSE  12.28 | val_MAE   7.76
+  epoch  15 | train_loss 0.00787 | val_loss 0.00543 | val_RMSE   9.21 | val_MAE   6.55  *
+  epoch  16 | train_loss 0.00765 | val_loss 0.00683 | val_RMSE  10.33 | val_MAE   6.62
+  epoch  17 | train_loss 0.00763 | val_loss 0.00706 | val_RMSE  10.50 | val_MAE   6.63
+  epoch  18 | train_loss 0.00754 | val_loss 0.00906 | val_RMSE  11.90 | val_MAE   7.63
+  epoch  19 | train_loss 0.00745 | val_loss 0.00626 | val_RMSE   9.89 | val_MAE   6.37
+  epoch  20 | train_loss 0.00751 | val_loss 0.00757 | val_RMSE  10.87 | val_MAE   8.36
+  epoch  21 | train_loss 0.00746 | val_loss 0.00673 | val_RMSE  10.26 | val_MAE   6.35
+  epoch  22 | train_loss 0.00714 | val_loss 0.00556 | val_RMSE   9.32 | val_MAE   7.10
+  epoch  23 | train_loss 0.00739 | val_loss 0.00714 | val_RMSE  10.56 | val_MAE   6.77
+  epoch  24 | train_loss 0.00684 | val_loss 0.00657 | val_RMSE  10.14 | val_MAE   6.75
+  epoch  25 | train_loss 0.00705 | val_loss 0.00597 | val_RMSE   9.65 | val_MAE   6.29
+  epoch  26 | train_loss 0.00680 | val_loss 0.00567 | val_RMSE   9.41 | val_MAE   6.66
+  epoch  27 | train_loss 0.00672 | val_loss 0.00619 | val_RMSE   9.83 | val_MAE   6.90
+  epoch  28 | train_loss 0.00671 | val_loss 0.00741 | val_RMSE  10.76 | val_MAE   6.97
+  epoch  29 | train_loss 0.00655 | val_loss 0.01119 | val_RMSE  13.22 | val_MAE   8.82
+  epoch  30 | train_loss 0.00691 | val_loss 0.00650 | val_RMSE  10.08 | val_MAE   6.88
+  early stopping at epoch 30 (best epoch 15)
+-- member 3/5 (seed 44)
+  epoch   1 | train_loss 0.17294 | val_loss 0.01774 | val_RMSE  16.65 | val_MAE  12.78  *
+  epoch   2 | train_loss 0.01539 | val_loss 0.00771 | val_RMSE  10.98 | val_MAE   7.71  *
+  epoch   3 | train_loss 0.01265 | val_loss 0.00704 | val_RMSE  10.49 | val_MAE   7.64  *
+  epoch   4 | train_loss 0.01186 | val_loss 0.01217 | val_RMSE  13.79 | val_MAE   9.55
+  epoch   5 | train_loss 0.01162 | val_loss 0.00682 | val_RMSE  10.32 | val_MAE   8.02  *
+  epoch   6 | train_loss 0.01124 | val_loss 0.00660 | val_RMSE  10.15 | val_MAE   6.89  *
+  epoch   7 | train_loss 0.01046 | val_loss 0.00923 | val_RMSE  12.01 | val_MAE   7.73
+  epoch   8 | train_loss 0.01039 | val_loss 0.00830 | val_RMSE  11.38 | val_MAE   7.41
+  epoch   9 | train_loss 0.01028 | val_loss 0.00700 | val_RMSE  10.46 | val_MAE   6.91
+  epoch  10 | train_loss 0.00997 | val_loss 0.00721 | val_RMSE  10.62 | val_MAE   6.98
+  epoch  11 | train_loss 0.00982 | val_loss 0.00619 | val_RMSE   9.84 | val_MAE   6.70  *
+  epoch  12 | train_loss 0.00919 | val_loss 0.00637 | val_RMSE   9.98 | val_MAE   6.63
+  epoch  13 | train_loss 0.00895 | val_loss 0.00652 | val_RMSE  10.10 | val_MAE   6.74
+  epoch  14 | train_loss 0.00885 | val_loss 0.01023 | val_RMSE  12.64 | val_MAE   8.07
+  epoch  15 | train_loss 0.00845 | val_loss 0.00594 | val_RMSE   9.63 | val_MAE   6.90  *
+  epoch  16 | train_loss 0.00851 | val_loss 0.00615 | val_RMSE   9.81 | val_MAE   6.66
+  epoch  17 | train_loss 0.00832 | val_loss 0.00744 | val_RMSE  10.78 | val_MAE   7.32
+  epoch  18 | train_loss 0.00793 | val_loss 0.00600 | val_RMSE   9.68 | val_MAE   6.97
+  epoch  19 | train_loss 0.00771 | val_loss 0.00973 | val_RMSE  12.33 | val_MAE   7.98
+  epoch  20 | train_loss 0.00767 | val_loss 0.00761 | val_RMSE  10.91 | val_MAE   7.24
+  epoch  21 | train_loss 0.00745 | val_loss 0.00614 | val_RMSE   9.80 | val_MAE   6.85
+  epoch  22 | train_loss 0.00714 | val_loss 0.00642 | val_RMSE  10.02 | val_MAE   7.88
+  epoch  23 | train_loss 0.00725 | val_loss 0.00760 | val_RMSE  10.90 | val_MAE   7.65
+  epoch  24 | train_loss 0.00715 | val_loss 0.00782 | val_RMSE  11.06 | val_MAE   7.56
+  epoch  25 | train_loss 0.00682 | val_loss 0.00835 | val_RMSE  11.42 | val_MAE   9.11
+  epoch  26 | train_loss 0.00683 | val_loss 0.00599 | val_RMSE   9.68 | val_MAE   6.84
+  epoch  27 | train_loss 0.00630 | val_loss 0.00642 | val_RMSE  10.02 | val_MAE   7.11
+  epoch  28 | train_loss 0.00632 | val_loss 0.00642 | val_RMSE  10.02 | val_MAE   6.79
+  epoch  29 | train_loss 0.00616 | val_loss 0.00636 | val_RMSE   9.97 | val_MAE   6.45
+  epoch  30 | train_loss 0.00627 | val_loss 0.00768 | val_RMSE  10.95 | val_MAE   6.81
+  early stopping at epoch 30 (best epoch 15)
+-- member 4/5 (seed 45)
+  epoch   1 | train_loss 0.08463 | val_loss 0.05038 | val_RMSE  28.06 | val_MAE  21.02  *
+  epoch   2 | train_loss 0.02235 | val_loss 0.01371 | val_RMSE  14.63 | val_MAE  10.50  *
+  epoch   3 | train_loss 0.01342 | val_loss 0.00822 | val_RMSE  11.33 | val_MAE   8.88  *
+  epoch   4 | train_loss 0.01249 | val_loss 0.00752 | val_RMSE  10.84 | val_MAE   8.44  *
+  epoch   5 | train_loss 0.01156 | val_loss 0.00903 | val_RMSE  11.88 | val_MAE   7.79
+  epoch   6 | train_loss 0.01173 | val_loss 0.00694 | val_RMSE  10.42 | val_MAE   6.98  *
+  epoch   7 | train_loss 0.01030 | val_loss 0.00665 | val_RMSE  10.20 | val_MAE   7.42  *
+  epoch   8 | train_loss 0.01021 | val_loss 0.00694 | val_RMSE  10.42 | val_MAE   7.20
+  epoch   9 | train_loss 0.00986 | val_loss 0.00690 | val_RMSE  10.38 | val_MAE   6.90
+  epoch  10 | train_loss 0.00964 | val_loss 0.01033 | val_RMSE  12.71 | val_MAE   8.24
+  epoch  11 | train_loss 0.00961 | val_loss 0.00796 | val_RMSE  11.15 | val_MAE   7.72
+  epoch  12 | train_loss 0.00930 | val_loss 0.01081 | val_RMSE  13.00 | val_MAE   8.17
+  epoch  13 | train_loss 0.00905 | val_loss 0.00833 | val_RMSE  11.41 | val_MAE   7.27
+  epoch  14 | train_loss 0.00917 | val_loss 0.00769 | val_RMSE  10.96 | val_MAE   6.90
+  epoch  15 | train_loss 0.00878 | val_loss 0.00660 | val_RMSE  10.16 | val_MAE   6.72  *
+  epoch  16 | train_loss 0.00855 | val_loss 0.00692 | val_RMSE  10.40 | val_MAE   8.00
+  epoch  17 | train_loss 0.00839 | val_loss 0.00637 | val_RMSE   9.98 | val_MAE   7.06  *
+  epoch  18 | train_loss 0.00845 | val_loss 0.00693 | val_RMSE  10.40 | val_MAE   7.19
+  epoch  19 | train_loss 0.00839 | val_loss 0.00653 | val_RMSE  10.10 | val_MAE   7.92
+  epoch  20 | train_loss 0.00814 | val_loss 0.00620 | val_RMSE   9.84 | val_MAE   6.60  *
+  epoch  21 | train_loss 0.00785 | val_loss 0.00610 | val_RMSE   9.76 | val_MAE   6.48  *
+  epoch  22 | train_loss 0.00773 | val_loss 0.00809 | val_RMSE  11.24 | val_MAE   7.39
+  epoch  23 | train_loss 0.00759 | val_loss 0.00729 | val_RMSE  10.67 | val_MAE   6.85
+  epoch  24 | train_loss 0.00731 | val_loss 0.00646 | val_RMSE  10.05 | val_MAE   6.98
+  epoch  25 | train_loss 0.00712 | val_loss 0.00555 | val_RMSE   9.31 | val_MAE   6.22  *
+  epoch  26 | train_loss 0.00671 | val_loss 0.00598 | val_RMSE   9.67 | val_MAE   6.36
+  epoch  27 | train_loss 0.00641 | val_loss 0.00603 | val_RMSE   9.71 | val_MAE   7.45
+  epoch  28 | train_loss 0.00641 | val_loss 0.00663 | val_RMSE  10.18 | val_MAE   6.56
+  epoch  29 | train_loss 0.00612 | val_loss 0.00590 | val_RMSE   9.60 | val_MAE   6.87
+  epoch  30 | train_loss 0.00596 | val_loss 0.00527 | val_RMSE   9.07 | val_MAE   5.75  *
+  epoch  31 | train_loss 0.00595 | val_loss 0.00556 | val_RMSE   9.32 | val_MAE   6.01
+  epoch  32 | train_loss 0.00580 | val_loss 0.00554 | val_RMSE   9.30 | val_MAE   5.66
+  epoch  33 | train_loss 0.00562 | val_loss 0.00541 | val_RMSE   9.19 | val_MAE   6.17
+  epoch  34 | train_loss 0.00552 | val_loss 0.00600 | val_RMSE   9.68 | val_MAE   6.24
+  epoch  35 | train_loss 0.00560 | val_loss 0.00542 | val_RMSE   9.20 | val_MAE   5.78
+  epoch  36 | train_loss 0.00521 | val_loss 0.00631 | val_RMSE   9.93 | val_MAE   6.34
+  epoch  37 | train_loss 0.00539 | val_loss 0.00654 | val_RMSE  10.11 | val_MAE   6.36
+  epoch  38 | train_loss 0.00539 | val_loss 0.00572 | val_RMSE   9.45 | val_MAE   6.23
+  epoch  39 | train_loss 0.00512 | val_loss 0.00664 | val_RMSE  10.19 | val_MAE   6.65
+  epoch  40 | train_loss 0.00506 | val_loss 0.00543 | val_RMSE   9.21 | val_MAE   5.83
+  epoch  41 | train_loss 0.00492 | val_loss 0.00613 | val_RMSE   9.79 | val_MAE   6.37
+  epoch  42 | train_loss 0.00499 | val_loss 0.00531 | val_RMSE   9.11 | val_MAE   6.39
+  epoch  43 | train_loss 0.00495 | val_loss 0.00681 | val_RMSE  10.32 | val_MAE   6.57
+  epoch  44 | train_loss 0.00488 | val_loss 0.00542 | val_RMSE   9.21 | val_MAE   6.41
+  epoch  45 | train_loss 0.00469 | val_loss 0.00585 | val_RMSE   9.56 | val_MAE   6.05
+  early stopping at epoch 45 (best epoch 30)
+-- member 5/5 (seed 46)
+  epoch   1 | train_loss 0.12129 | val_loss 0.03941 | val_RMSE  24.82 | val_MAE  21.21  *
+  epoch   2 | train_loss 0.02025 | val_loss 0.01235 | val_RMSE  13.89 | val_MAE   9.52  *
+  epoch   3 | train_loss 0.01241 | val_loss 0.00768 | val_RMSE  10.95 | val_MAE   7.71  *
+  epoch   4 | train_loss 0.01135 | val_loss 0.01174 | val_RMSE  13.54 | val_MAE   9.57
+  epoch   5 | train_loss 0.01043 | val_loss 0.00703 | val_RMSE  10.48 | val_MAE   7.59  *
+  epoch   6 | train_loss 0.01002 | val_loss 0.00828 | val_RMSE  11.37 | val_MAE   7.55
+  epoch   7 | train_loss 0.00955 | val_loss 0.00603 | val_RMSE   9.71 | val_MAE   6.36  *
+  epoch   8 | train_loss 0.00937 | val_loss 0.00701 | val_RMSE  10.47 | val_MAE   7.10
+  epoch   9 | train_loss 0.00876 | val_loss 0.00565 | val_RMSE   9.40 | val_MAE   6.87  *
+  epoch  10 | train_loss 0.00854 | val_loss 0.00653 | val_RMSE  10.10 | val_MAE   7.27
+  epoch  11 | train_loss 0.00840 | val_loss 0.00841 | val_RMSE  11.46 | val_MAE   7.56
+  epoch  12 | train_loss 0.00843 | val_loss 0.00574 | val_RMSE   9.47 | val_MAE   6.06
+  epoch  13 | train_loss 0.00801 | val_loss 0.00551 | val_RMSE   9.28 | val_MAE   6.86  *
+  epoch  14 | train_loss 0.00808 | val_loss 0.00564 | val_RMSE   9.39 | val_MAE   6.86
+  epoch  15 | train_loss 0.00796 | val_loss 0.00568 | val_RMSE   9.42 | val_MAE   6.62
+  epoch  16 | train_loss 0.00788 | val_loss 0.00586 | val_RMSE   9.57 | val_MAE   7.05
+  epoch  17 | train_loss 0.00785 | val_loss 0.00548 | val_RMSE   9.26 | val_MAE   6.47  *
+  epoch  18 | train_loss 0.00756 | val_loss 0.00588 | val_RMSE   9.58 | val_MAE   6.64
+  epoch  19 | train_loss 0.00751 | val_loss 0.00728 | val_RMSE  10.67 | val_MAE   6.97
+  epoch  20 | train_loss 0.00753 | val_loss 0.00640 | val_RMSE  10.00 | val_MAE   6.64
+  epoch  21 | train_loss 0.00740 | val_loss 0.00593 | val_RMSE   9.63 | val_MAE   7.44
+  epoch  22 | train_loss 0.00745 | val_loss 0.00641 | val_RMSE  10.01 | val_MAE   6.34
+  epoch  23 | train_loss 0.00737 | val_loss 0.00589 | val_RMSE   9.59 | val_MAE   6.77
+  epoch  24 | train_loss 0.00723 | val_loss 0.00688 | val_RMSE  10.37 | val_MAE   7.02
+  epoch  25 | train_loss 0.00725 | val_loss 0.00653 | val_RMSE  10.10 | val_MAE   7.45
+  epoch  26 | train_loss 0.00728 | val_loss 0.00529 | val_RMSE   9.09 | val_MAE   6.42  *
+  epoch  27 | train_loss 0.00705 | val_loss 0.00586 | val_RMSE   9.57 | val_MAE   6.99
+  epoch  28 | train_loss 0.00698 | val_loss 0.00533 | val_RMSE   9.13 | val_MAE   6.45
+  epoch  29 | train_loss 0.00697 | val_loss 0.00613 | val_RMSE   9.79 | val_MAE   6.18
+  epoch  30 | train_loss 0.00683 | val_loss 0.00565 | val_RMSE   9.39 | val_MAE   6.38
+  epoch  31 | train_loss 0.00681 | val_loss 0.00541 | val_RMSE   9.20 | val_MAE   6.23
+  epoch  32 | train_loss 0.00681 | val_loss 0.00610 | val_RMSE   9.76 | val_MAE   6.18
+  epoch  33 | train_loss 0.00657 | val_loss 0.00577 | val_RMSE   9.50 | val_MAE   6.26
+  epoch  34 | train_loss 0.00633 | val_loss 0.00589 | val_RMSE   9.59 | val_MAE   6.63
+  epoch  35 | train_loss 0.00609 | val_loss 0.00610 | val_RMSE   9.76 | val_MAE   5.88
+  epoch  36 | train_loss 0.00571 | val_loss 0.00526 | val_RMSE   9.06 | val_MAE   5.76  *
+  epoch  37 | train_loss 0.00566 | val_loss 0.00504 | val_RMSE   8.87 | val_MAE   6.36  *
+  epoch  38 | train_loss 0.00525 | val_loss 0.00553 | val_RMSE   9.30 | val_MAE   6.02
+  epoch  39 | train_loss 0.00529 | val_loss 0.00523 | val_RMSE   9.04 | val_MAE   6.27
+  epoch  40 | train_loss 0.00523 | val_loss 0.00691 | val_RMSE  10.39 | val_MAE   6.22
+  epoch  41 | train_loss 0.00483 | val_loss 0.00632 | val_RMSE   9.93 | val_MAE   6.07
+  epoch  42 | train_loss 0.00489 | val_loss 0.00543 | val_RMSE   9.21 | val_MAE   6.44
+  epoch  43 | train_loss 0.00464 | val_loss 0.00628 | val_RMSE   9.91 | val_MAE   6.29
+  epoch  44 | train_loss 0.00466 | val_loss 0.00696 | val_RMSE  10.43 | val_MAE   6.32
+  epoch  45 | train_loss 0.00459 | val_loss 0.00608 | val_RMSE   9.75 | val_MAE   6.29
+  epoch  46 | train_loss 0.00450 | val_loss 0.00587 | val_RMSE   9.58 | val_MAE   5.85
+  epoch  47 | train_loss 0.00433 | val_loss 0.00542 | val_RMSE   9.20 | val_MAE   5.84
+  epoch  48 | train_loss 0.00417 | val_loss 0.00563 | val_RMSE   9.38 | val_MAE   6.10
+  epoch  49 | train_loss 0.00419 | val_loss 0.00565 | val_RMSE   9.39 | val_MAE   5.90
+  epoch  50 | train_loss 0.00399 | val_loss 0.00625 | val_RMSE   9.88 | val_MAE   6.18
+  epoch  51 | train_loss 0.00400 | val_loss 0.00599 | val_RMSE   9.67 | val_MAE   5.98
+  epoch  52 | train_loss 0.00399 | val_loss 0.00590 | val_RMSE   9.60 | val_MAE   5.86
+  early stopping at epoch 52 (best epoch 37)
+
+TEST FD001 (100 engines, ensemble of 5): RMSE 14.33 | MAE 10.66 | NASA score 315.2   [capped truth: RMSE 13.20]
+Total time 2194s. Artifacts written to outputs\FD001
